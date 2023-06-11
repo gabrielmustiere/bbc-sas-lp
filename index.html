@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>BBC_SAS</title>
+    <title>BBC-SAS</title>
     <meta name="description"
           content="Bienvenue sur le site de BBC SAS, votre partenaire de confiance pour les solutions technologiques.">
     <meta name="keywords" content="BBC SAS, solutions technologiques, entreprise, services, confiance">
@@ -70,3 +70,31 @@
 </div>
 </body>
 </html>
+
+
+@ 86400 IN SOA ns1.gandi.net. hostmaster.gandi.net. 1686477807 10800 3600 604800 10800
+@ 10800 IN ALIAS apex-loadbalancer.netlify.com
+@ 3600 IN MX 0 bbcsas-fr0i.mail.protection.outlook.com.
+@ 3600 IN MX 10 spool.mail.gandi.net.
+@ 3600 IN MX 50 fb.mail.gandi.net.
+@ 3600 IN TXT "MS=ms55936733"
+@ 3600 IN TXT "v=spf1 include:spf.mailjet.com include:spf.protection.outlook.com -all"
+_imap._tcp 10800 IN SRV 0 0 0 .
+_imaps._tcp 10800 IN SRV 0 1 993 mail.gandi.net.
+_pop3._tcp 10800 IN SRV 0 0 0 .
+_pop3s._tcp 10800 IN SRV 10 1 995 mail.gandi.net.
+_submission._tcp 10800 IN SRV 0 1 465 mail.gandi.net.
+autodiscover 3600 IN CNAME autodiscover.outlook.com.
+gm1._domainkey 10800 IN CNAME gm1.gandimail.net.
+gm2._domainkey 10800 IN CNAME gm2.gandimail.net.
+gm3._domainkey 10800 IN CNAME gm3.gandimail.net.
+mailjet._domainkey 3600 IN TXT "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCvIvptg6QKi/NG+kSFgAARXdsKtetpad8+gzALL1mS/NRxI1xV5FalqHpEuinav3vczs8cWtj5+8UUyGyq/kDdjUhRUi6ZPoexwfZd7LQBIa0yYpEzKEbtZmor+DrgV+AoLkOv4rUlSnSxccJJ0F/KfZmq9jhjlKeXViOd0W4WKQIDAQAB"
+mailjet._e33ed548 3600 IN TXT "e33ed548e85a1e4ef89d2edb45ed24db"
+prod-im-db 3600 IN A 51.159.10.108
+prod-pb-db 3600 IN CNAME prod-im-db
+prod-pb-directus 3600 IN CNAME prod-srv-two
+prod-pb-meilisearch 3600 IN CNAME prod-srv-two
+prod-pb-sylius 3600 IN CNAME prod-srv-one
+prod-srv-one 3600 IN A 212.47.247.33
+prod-srv-two 3600 IN A 51.77.150.120
+www 10800 IN CNAME frolicking-begonia-6f5681.netlify.app.
